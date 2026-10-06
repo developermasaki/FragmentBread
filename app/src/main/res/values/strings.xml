@@ -4,4 +4,5 @@
     <string name="image_description">これは画像です</string>
 
     <string name="store_name_example1">Sourdough</string>
+    <string name="store_description_example1">フランスパンが美味しいお店。朝の10時には、惣菜パンが売り切れる。</string>
 </resources>

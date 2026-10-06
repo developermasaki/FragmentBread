@@ -30,10 +30,22 @@
             android:id="@+id/store_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:maxLines="2"
             android:textSize="20sp"
             android:typeface="serif"
             app:layout_constraintTop_toTopOf="@id/store_content"
             tools:text="@string/store_name_example1" />
+
+        <TextView
+            android:id="@+id/store_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:maxLines="2"
+            android:textSize="16sp"
+            android:typeface="serif"
+            app:layout_constraintTop_toBottomOf="@id/store_name"
+            tools:text="@string/store_description_example1"
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
