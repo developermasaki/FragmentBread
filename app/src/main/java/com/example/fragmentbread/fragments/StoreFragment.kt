@@ -21,4 +21,9 @@ class StoreFragment : Fragment(R.layout.fragment_store) {
         val view = binding.root
         return view
     }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }
