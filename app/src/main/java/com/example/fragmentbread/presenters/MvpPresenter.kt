@@ -2,12 +2,14 @@ package com.example.fragmentbread.presenters
 
 /**
  * MVP用のPresenterを定義する
+ *
+ *
  */
-interface MvpPresenter {
+interface MvpPresenter<V> {
     /**
      * presenterにviewを登録する
      */
-    fun onAttachView()
+    fun onAttachView(view: V)
 
     /**
      * presenterからviewを解除する
