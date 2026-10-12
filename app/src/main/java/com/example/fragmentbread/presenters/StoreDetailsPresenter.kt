@@ -3,11 +3,12 @@ package com.example.fragmentbread.presenters
 import com.example.fragmentbread.views.StoreDetailsView
 
 class StoreDetailsPresenter : MvpPresenter<StoreDetailsView> {
+    private var _view: StoreDetailsView? = null
     override fun onAttachView(view: StoreDetailsView) {
-        TODO("Not yet implemented")
+        _view = view
     }
 
     override fun onDetachView() {
-        TODO("Not yet implemented")
+        _view = null
     }
 }
