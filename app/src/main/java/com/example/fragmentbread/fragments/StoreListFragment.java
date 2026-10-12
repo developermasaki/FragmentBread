@@ -24,12 +24,12 @@ import com.example.fragmentbread.viewmodels.StoreState;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainFragment extends Fragment {
+public class StoreListFragment extends Fragment {
     private FragmentStoreListBinding binding;
     private List<StoreState> storeDataSet;
     private SelectionTracker<Long> tracker;
 
-    public MainFragment() {
+    public StoreListFragment() {
         super(R.layout.fragment_store_list);
     }
 

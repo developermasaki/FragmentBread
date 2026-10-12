@@ -6,10 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.fragmentbread.R
-import com.example.fragmentbread.databinding.FragmentStoreBinding
+import com.example.fragmentbread.databinding.FragmentStoreDetailsBinding
 
-class StoreFragment : Fragment(R.layout.fragment_store) {
-    private var _binding: FragmentStoreBinding? = null
+class StoreDetailsFragment : Fragment(R.layout.fragment_store_details) {
+    private var _binding: FragmentStoreDetailsBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -17,7 +17,7 @@ class StoreFragment : Fragment(R.layout.fragment_store) {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentStoreBinding.inflate(inflater, container, false)
+        _binding = FragmentStoreDetailsBinding.inflate(inflater, container, false)
         val view = binding.root
         return view
     }
