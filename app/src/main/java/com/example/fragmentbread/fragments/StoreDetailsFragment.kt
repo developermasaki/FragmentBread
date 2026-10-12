@@ -39,8 +39,8 @@ class StoreDetailsFragment : Fragment(R.layout.fragment_store_details), StoreDet
         presenter.onAttachView(this)
     }
 
-    override fun addFavoriteStore() {
-        TODO("Not yet implemented")
+    override fun toggleFavoriteStore() {
+        binding.storeImageView.isSelected = !binding.storeImageView.isSelected
     }
 
     override fun onDestroyView() {

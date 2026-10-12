@@ -5,7 +5,7 @@ package com.example.fragmentbread.views
  */
 interface StoreDetailsView : MvpView {
     /**
-     * お店をお気に入り登録する
+     * お店のお気に入り登録を切り替える
      */
-    fun addFavoriteStore()
+    fun toggleFavoriteStore()
 }
