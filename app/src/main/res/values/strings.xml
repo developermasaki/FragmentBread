@@ -5,4 +5,7 @@
 
     <string name="store_name_example1">Sourdough</string>
     <string name="store_description_example1">フランスパンが美味しいお店。朝の10時には、惣菜パンが売り切れる。</string>
+
+    // お店の詳細画面
+    <string name="store_details_favorite_button">お気に入り登録するボタンです</string>
 </resources>

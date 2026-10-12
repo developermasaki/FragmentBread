@@ -28,16 +28,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/store_imageView">
 
-        <TextView
-            android:id="@+id/store_name"
+        <LinearLayout
+            android:id="@+id/header_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:maxLines="2"
-            android:textSize="20sp"
-            android:typeface="serif"
-            app:layout_constraintTop_toTopOf="@id/store_content"
-            tools:text="@string/store_name_example1" />
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/store_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:textSize="20sp"
+                android:typeface="serif"
+                tools:text="@string/store_name_example1" />
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/favorite_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/store_details_favorite_button"
+                android:src="@drawable/baseline_favorite_24"
+                app:tint="@color/favorite_icon_off" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/store_description"
@@ -47,7 +69,7 @@
             android:maxLines="2"
             android:textSize="16sp"
             android:typeface="serif"
-            app:layout_constraintTop_toBottomOf="@id/store_name"
+            app:layout_constraintTop_toBottomOf="@id/header_content"
             tools:text="@string/store_description_example1" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
