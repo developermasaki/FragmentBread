@@ -1,14 +1,10 @@
 package com.example.fragmentbread.views
 
 /**
- * 各Viewは、本インターフェイスを実装すること
+ * PresenterがView（ActivityやFragment）を操作する方法を定義する基底インターフェース
  *
- * Viewでは
- *
- *  ・xmlのviewを直接操作する
- *
- *  ・adapter経由で、viewを操作する
- *
- * ことを行う
+ * ・各画面のViewインターフェースは、本インターフェースを継承すること
+ * 
+ * ・各ActivityやFragmentは、対応するViewインターフェースを実装すること
  */
 interface MvpView
