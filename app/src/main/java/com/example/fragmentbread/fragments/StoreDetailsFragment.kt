@@ -37,6 +37,10 @@ class StoreDetailsFragment : Fragment(R.layout.fragment_store_details), StoreDet
         super.onViewCreated(view, savedInstanceState)
 
         presenter.onAttachView(this)
+
+        binding.storeImageView.setOnClickListener {
+            presenter.toggleFavoriteStore()
+        }
     }
 
     override fun toggleFavoriteStore() {
