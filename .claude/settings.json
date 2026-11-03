@@ -1,0 +1,6 @@
+{
+    "model": "claude-sonnet-5",
+    "modelSettings": {
+        "claude-sonnet-5": { "effortLevel": "xhigh" }
+    }
+}
