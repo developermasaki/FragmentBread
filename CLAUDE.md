@@ -9,20 +9,11 @@
 - build.gradle(.kts)、settings.gradle(.kts)、gradle.properties、gradle/ 以下、gradlew を変更したときは、そのことと理由を必ず伝える。
 - .env や鍵ファイルを作らない。
 - ドキュメント（CLAUDE.md、README、設計メモなど）を新規作成・追記する際は、原則として日本語で書く。
+- この環境には Java・Android SDK が入っておらず、`./gradlew` はそのままでは実行できない。ビルド・テストの実行は人間が Android Studio 上で行う。
 
 ## プロジェクト概要
 
 FragmentBread（rootProject 名は "Fragment Bread"）は、`RecyclerView` と AndroidX の `recyclerview-selection` を使ったマスターリストを、Fragment ベースで実装した小さな単一モジュールの Android アプリ。`applicationId`／`namespace` は `com.example.fragmentbread`。アプリコードは基本 Java で、データクラス 1 つだけ Kotlin。
-
-## ビルド・テストコマンド
-
-この環境は `.git` が読み取り専用で、開発ツール類はすべて Gradle 経由なので wrapper を使う。
-
-- デバッグ APK のビルド: `./gradlew assembleDebug`
-- 単体テスト実行（JVM、`app/src/test`）: `./gradlew testDebugUnitTest`
-- 単体テストを 1 クラスだけ実行: `./gradlew testDebugUnitTest --tests "com.example.fragmentbread.ExampleUnitTest"`
-- インストゥルメンテーションテスト実行（`app/src/androidTest`、デバイス／エミュレータが必要）: `./gradlew connectedDebugAndroidTest`
-- Lint: `./gradlew lint`
 
 依存バージョンは `gradle/libs.versions.toml`（version catalog）に集約されており、`app/build.gradle.kts` は `libs.*` 経由で参照している。
 
